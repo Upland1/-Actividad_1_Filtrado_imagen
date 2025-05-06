@@ -36,3 +36,9 @@ def process_plate_image(image_path):
     )
 
     return subsampled
+
+def display_image(image):
+    """Muestra la imagen en escala de grises"""
+    plt.imshow(image, cmap='gray')
+    plt.axis('off')
+    plt.show()
