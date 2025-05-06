@@ -42,3 +42,7 @@ def display_image(image):
     plt.imshow(image, cmap='gray')
     plt.axis('off')
     plt.show()
+
+if __name__ == '__main__':
+    processed_image = process_plate_image('placa_q.jpg')
+    display_image(processed_image)
